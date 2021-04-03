@@ -20,6 +20,13 @@ body,html{
     background-size: cover;
 
 }
+#mainNav{
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 #mainNav a{
     color: #000;
 }
@@ -28,9 +35,29 @@ body,html{
     border: 1px solid #eb8303;
     
 }
+.affix{
+  background-color: #da5900 !important;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.7rem !important;
+  padding: linear;
+  font-size: 0.8rem;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  color: #fff !important;
+}
+.affix a{
+   color:  #fff !important;
+}
+.affix button{
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
 .bg_historia{
     height: auto;
-    text-align: center;
+    
     
 }
 #beerCanvas, #beerCanvas2 {

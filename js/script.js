@@ -41,7 +41,7 @@ function draw(particles, ctx, canvas) {
 }
 loop();
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     /* depois de rolar 100px */
     if ($(document).scrollTop() > 100) {
         $('.navbar').addClass('affix');
