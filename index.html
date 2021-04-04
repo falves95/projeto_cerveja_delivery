@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adega livery</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -50,7 +51,7 @@
     <br>
     <div class="container">
         <header>
-            <h2>
+            <h2 class="text-center">
                 Nossas Bebidas!!!
             </h2>
             <hr>
@@ -69,6 +70,11 @@
                    <footer class="blockquote-footer">
                        <cite class="source title">{{cerveja.composicao}}</cite>
                    </footer>
+                   <br>
+                   <button class="btn btn-outline-warning btn-block text-dark"
+                   ng-click="detalhar(cerveja)">
+                       Leia mais...
+                   </button>
                 </div> 
             </div>
         </div>
