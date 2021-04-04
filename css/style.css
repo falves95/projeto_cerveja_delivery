@@ -146,6 +146,7 @@ body,html{
 
 .card-img-block {
   margin-bottom: -0.5rem !important; 
+  
 }
 
 .profile-card{
@@ -167,6 +168,9 @@ body,html{
 .profile-card .card-img-block img{
   border-radius: 3px;
   box-shadow:0 0 5px rgba(0,0,0,0.63);
+  
+  
+  
 }
 .profile-card h5{
   color:#4E5E30;
