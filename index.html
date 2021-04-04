@@ -63,6 +63,12 @@
                         {{cerveja.nome}}
                         <small><em>{{cerveja.tipo}}</em></small>
                    </h5>
+                   <p class="card-text">
+                       {{cerveja.descricao | cut:true:100}}
+                   </p>
+                   <footer class="blockquote-footer">
+                       <cite class="source title">{{cerveja.composicao}}</cite>
+                   </footer>
                 </div> 
             </div>
         </div>
