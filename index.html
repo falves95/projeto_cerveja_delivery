@@ -59,6 +59,9 @@
         
         <div class="card-columns">
             <div class="card" ng-repeat="cerveja in cervejas">
+                <div class="card-img-block" ng-show="cerveja.img">
+                    <img ng-src="imagens/{{cerveja.img}}" alt="">
+                </div>
                <div class="card-body">
                    <h5 class="card-title">
                         {{cerveja.nome}}
