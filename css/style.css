@@ -1,24 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 body,html{
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    height: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  height: 100%;
 }
 .topo, .bg_historia{
-    width: 100%;
-    position: relative;
-    height: 500px;
-    background: radial-gradient(circle, #fbb600, #da5900);
-    color: black;
-    border-bottom: 1px solid #db8300;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  width: 100%;
+  position: relative;
+  height: 500px;
+  background: radial-gradient(circle, #fbb600, #da5900);
+  color: black;
+  border-bottom: 1px solid #db8300;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 #mainNav{
   
@@ -28,12 +28,12 @@ body,html{
   transition: all 1s ease;
 }
 #mainNav a{
-    color: #000;
+  color: #000;
 }
 #mainNav button{
-    color: #000;
-    border: 1px solid #eb8303;
-    
+  color: #000;
+  border: 1px solid #eb8303;
+  
 }
 .affix{
   background-color: #da5900 !important;
@@ -49,16 +49,16 @@ body,html{
   color: #fff !important;
 }
 .affix a{
-   color:  #fff !important;
+  color:  #fff !important;
 }
 .affix button{
   color: #fff !important;
   border: 1px solid #fff !important;
 }
 .bg_historia{
-    height: auto;
-    
-    
+  height: auto;
+  
+  
 }
 #beerCanvas, #beerCanvas2 {
   position: absolute;
@@ -131,4 +131,52 @@ body,html{
       text-decoration: underline;
     }
   }
+}
+
+/*===================== card =====================*/
+
+.card:hover{
+  background-color: #fefefe;
+  box-shadow: 0 2px 3px rgba(0,0,0,.5);
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.card-img-block {
+  margin-bottom: -0.5rem !important; 
+}
+
+.profile-card{
+  margin-top:20px;
+}
+.profile-card .btn{
+  border-radius:2px;
+  text-transform:uppercase;
+  font-size: 1rem;
+  padding:7px 20px;
+}
+.profile-card .card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+
+}
+.profile-card .card-img-block img{
+  border-radius: 3px;
+  box-shadow:0 0 5px rgba(0,0,0,0.63);
+}
+.profile-card h5{
+  color:#4E5E30;
+  font-weight:600;
+}
+.profile-card p{
+  font-size:1rem;
+  font-weight:300;
+}
+.profile-card .btn-warning{
+  background-color:#4E5E30;
+  border-color:#4E5E30;
 }

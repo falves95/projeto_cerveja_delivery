@@ -58,32 +58,32 @@
         </header>
         
         <div class="card-columns">
-            <div class="card" ng-repeat="cerveja in cervejas">
+            <div class="card profile-card" ng-repeat="cerveja in cervejas">
                 <div class="card-img-block" ng-show="cerveja.img">
                     <img ng-src="imagens/{{cerveja.img}}" alt="">
                 </div>
-               <div class="card-body">
-                   <h5 class="card-title">
+                <div class="card-body">
+                    <h5 class="card-title">
                         {{cerveja.nome}}
                         <small><em>{{cerveja.tipo}}</em></small>
-                   </h5>
-                   <p class="card-text">
-                       {{cerveja.descricao | cut:true:100}}
-                   </p>
-                   <footer class="blockquote-footer">
-                       <cite class="source title">{{cerveja.composicao}}</cite>
-                   </footer>
-                   <br>
-                   <button class="btn btn-outline-warning btn-block text-dark"
-                   ng-click="detalhar(cerveja)">
-                       Leia mais...
-                   </button>
-                </div> 
-            </div>
+                    </h5>
+                    <p class="card-text">
+                        {{cerveja.descricao | cut:true:100}}
+                    </p>
+                    <footer class="blockquote-footer">
+                        <cite class="source title">{{cerveja.composicao}}</cite>
+                    </footer>
+                    <br>
+                    <button class="btn btn-outline-warning btn-block text-dark"
+                    ng-click="detalhar(cerveja)">
+                    Leia mais...
+                </button>
+            </div> 
         </div>
     </div>
-    
-    <br>
+</div>
+
+<br>
 </section><!--Fim das bebidas-->
 <section class="bg_historia"><!--inicio descrição-->
     <canvas id="beerCanvas2"></canvas>
