@@ -79,7 +79,7 @@ body,html{
   color: black;
   text-align: center;
   z-index: 101;
-  h1 {
+  h1{
     font-size: em(90px);
     margin: 0;
     letter-spacing: 2px;
