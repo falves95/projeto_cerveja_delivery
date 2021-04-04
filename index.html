@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-controller="zeebeerCtrl">
-    <header class="topo">
+    <header class="topo" id="topo">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a href="#topo" class="navbar-brand">{{titulo}}</a>
+                <a href="#topo" class="navbar-brand" onclick="$('#topo').animatescroll()">{{titulo}}</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle Navigation">menu</button>
                 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#" class="nav-link">Nossas Bebidas</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Descrição das bebidas</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+                        <li class="nav-item"><a href="#" onclick="$('#nossasbebidas').animatescroll()" class="nav-link">Nossas Bebidas</a></li>
+                        <li class="nav-item"><a href="#" onclick="$('#descricaobebidas').animatescroll()" class="nav-link">Descrição das bebidas</a></li>
+                        <li class="nav-item"><a href="#" onclick="$('#contato').animatescroll()" class="nav-link">Contatos</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,9 +49,10 @@
         </div>
     </div>
 </header>
-<section><!--Inicio das bebidas-->
+<section id="nossasbebidas"><!--Inicio das bebidas-->
     <br>
-    <div class="container">
+    <div class="container mt-4">
+        
         <header>
             <h2 class="text-center">
                 Nossas Bebidas!!!
@@ -86,9 +89,11 @@
 
 <br>
 </section><!--Fim das bebidas-->
-<section class="bg_historia"><!--inicio descrição-->
+<section class="bg_historia" id="descricaobebidas"><!--inicio descrição-->
     <canvas id="beerCanvas2"></canvas>
-    <div class="container my-3">
+    <div class="container mt-5">
+        <br>
+        <br>
         <header>
             <h2 class="text-center">
                 Descrição das bebidas
@@ -96,20 +101,20 @@
             <hr>
         </header>
         <div class="row">
-            <div class="col-sm-offset-1 col-sm-8 col-xs-12 text-justify">
+            <div class="col-md-offset-1 col-sm-8 col-xs-12 text-justify">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut doloribus vero, ipsa deleniti eaque blanditiis ullam exercitationem nobis, ducimus aliquam dolor, enim consectetur labore! Dignissimos voluptatibus eius animi iusto.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut doloribus vero, ipsa deleniti eaque blanditiis ullam exercitationem nobis, ducimus aliquam dolor, enim consectetur labore! Dignissimos voluptatibus eius animi iusto.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut doloribus vero, ipsa deleniti eaque blanditiis ullam exercitationem nobis, ducimus aliquam dolor, enim consectetur labore! Dignissimos voluptatibus eius animi iusto.</p>
             </div>
-            <div class="col-4 col-xs-12 text-center">
+            <div class="col-sm-4 col-xs-12 text-center">
                 Logo Marca
             </div>
         </div>
     </div>
 </section><!--Fim descrição-->
-<section><!--Inicio Contatos-->
-    <div class="container">
-        <header >
+<section id="contato"><!--Inicio Contatos-->
+    <div class="container mt-5">
+        <header class="text-center">
             <h2>
                 Contatos
             </h2>
@@ -118,25 +123,27 @@
         <div class="row">
             <div class="col-sm-8">
                 <form action="">
-                    <div class="form-group float-label-controller">
+                    <div class="form-group float-label-control">
                         <label for="">Nome</label>
                         <input class="form-control" type="text" placeholder="Nome">
                     </div>
-                    <div class="form-group float-label-controller">
+                    <div class="form-group float-label-control">
                         <label for="">E-mail</label>
                         <input class="form-control" type="text" placeholder="E-mail">
                     </div>
-                    <div class="form-group float-label-controller">
+                    <div class="form-group float-label-control">
                         <label for="">Telefone</label>
                         <input class="form-control" type="text" placeholder="Telefone">
                     </div>
-                    <div class="form-group float-label-controller">
+                    <div class="form-group float-label-control">
                         <label for="">Minha Mensagem</label>
-                        <input class="form-control" type="text" placeholder="Minha Mensagem">
+                        <textarea class="form-control" type="text" placeholder="Minha Mensagem"></textarea>
                     </div>
                     <div class="clearfix">
                         <button class="btm btn-outline-warning float-right text-dark">
-                            <i class="fas fa-paper-plane">enviar</i></button>
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar
+                        </button>
                         </div>
                     </form>
                 </div>
@@ -233,6 +240,7 @@
     <script src="js/bd.js"></script>
     <script src="js/script.js"></script>
     <script src="js/appzeebeer.js"></script>
+    <script src="js/animatescroll.min.js"></script>
     
 </body>
 </html>
